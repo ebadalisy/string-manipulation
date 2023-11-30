@@ -1,0 +1,30 @@
+'3) Finding And replacing of a character from string
+Dim String1, String2 As String
+Dim CharReplace, ReplaceWith, Char1 As Char
+Dim i As Integer
+
+String1 = ""
+String2 = ""
+CharReplace = ""
+ReplaceWith = ""
+Char1 = ""
+i = 0
+
+
+Console.Write("Enter string: ")
+String1 = UCase(Console.ReadLine)
+Console.Write("Enter character to replace: ")
+CharReplace = UCase(Console.ReadLine)
+Console.Write("Enter character to replace with: ")
+ReplaceWith = UCase(Console.ReadLine)
+
+For i = 1 To Len(String1)
+    Char1 = Mid(String1, i, 1)
+    If Char1 = CharReplace Then
+        String2 = String2 & ReplaceWith
+    Else
+        String2 = String2 & Char1
+    End If
+Next
+
+Console.WriteLine("Final Product: " & String2)
