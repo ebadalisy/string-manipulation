@@ -1,0 +1,22 @@
+ Dim string1, string2 As String
+ Dim i, z As Integer
+ Dim flag As Boolean
+ flag = False
+ i = 0
+ z = 0
+ Console.Write("enter string 1: ")
+ string1 = Console.ReadLine
+ Console.Write("enter string : ")
+ string2 = Console.ReadLine
+ For i = 1 To 1000
+     For z = 1 To 1000
+         If Mid(string1, i, 1) = Mid(string2, z, 1) Then
+             flag = True
+         Else flag = False
+         End If
+     Next
+ Next
+ If flag = True Then
+     Console.WriteLine("strings are anagram")
+ Else console.WriteLine("strings are not anagram")
+ End If
