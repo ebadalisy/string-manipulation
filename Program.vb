@@ -1,6 +1,6 @@
 Imports System
 
-Module Program
+Module smq1
     Sub Main()
         Dim FirstName As String
         Dim SecondName As String
