@@ -1,0 +1,19 @@
+2) Finding and truncating a character from string
+Dim Str1, Str2 As String
+Dim char2, Chartotruncate As Char
+Dim i As Integer
+
+Console.Write("Enter string: ")
+Str1 = Console.ReadLine
+Console.Write("Enter character to truncate: ")
+Chartotruncate = Console.ReadLine
+
+For i = 1 To Len(Str1)
+    char2 = Mid(Str1, i, 1)
+    If char2 <> Chartotruncate Then
+
+
+        Str2 = Str2 & char2
+    End If
+Next
+Console.WriteLine("String after truncating is: " & Str2)
