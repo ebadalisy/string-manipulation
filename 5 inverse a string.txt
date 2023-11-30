@@ -1,0 +1,17 @@
+ Dim String1, String2 As String
+ Dim Char1 As Char
+ Dim i As Integer
+
+ String1 = ""
+ String2 = ""
+ Char1 = ""
+ i = 0
+
+ Console.Write("enter a string: ")
+ String1 = Console.ReadLine
+
+ For i = 1 To Len(String1)
+     Char1 = Right(String1, i)
+     String2 = String2 & Char1
+ Next
+ Console.WriteLine("inverse = " & string2)
