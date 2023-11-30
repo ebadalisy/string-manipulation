@@ -1,0 +1,32 @@
+ '4) Counting number of alphabets and digits in a string
+ Dim i, Alphabets, Digits, Special As Integer
+ Dim String1 As String
+ Dim Char1 As Char
+
+ i = 0
+ Alphabets = 0
+ Digits = 0
+ Special = 0
+ String1 = ""
+ Char1 = ""
+
+ Console.Write("enter your string: ")
+ String1 = LCase(Console.ReadLine)
+
+ For i = 1 To Len(String1)
+     Char1 = Mid(String1, i, 1)
+     If Char1 >= "a" And Char1 <= "z" Then
+         Alphabets = Alphabets + 1
+     Else
+         If Char1 >= "0" And Char1 <= "9" Then
+             Digits = Digits + 1
+         Else
+             Special = Special + 1
+
+         End If
+     End If
+ Next
+
+ Console.WriteLine("total alphabets were: " & Alphabets)
+ Console.WriteLine("total Digits were: " & Digits)
+ Console.WriteLine("total specials were: " & Special)
